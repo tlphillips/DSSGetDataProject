@@ -1,20 +1,28 @@
 # DSSGetDataProject
-Project for the DSS Get data course
-The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. You will be graded by your peers on a series of yes/no questions related to the project. You will be required to submit: 1) a tidy data set as described below, 2) a link to a Github repository with your script for performing the analysis, and 3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md. You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.  
 
-One of the most exciting areas in all of data science right now is wearable computing - see for example this article . Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
+This project contains the script which takes the test and train data sets and combines them into a tidy data set, which gives the Mean and Standard Deviation values recorded for the Human Activity Recognition Using Smartphones Dataset.
 
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+1. he following data sets are loaded. 
 
-Here are the data for the project: 
+x_test.txt - Test data observarions. 
+y_test.txt - Coded activities across observations.
+subject_test.txt - Coded label for each subject across observations. 
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+y_train.txt - Train data observarions
+x_train.txt - Coded activities across observations.
+subject_train.txt - Coded label for each subject across observations.
 
- You should create one R script called run_analysis.R that does the following. 
-Merges the training and the test sets to create one data set.
-Extracts only the measurements on the mean and standard deviation for each measurement. 
-Uses descriptive activity names to name the activities in the data set
-Appropriately labels the data set with descriptive variable names. 
-From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+features.txt - variable names for the measurements.
+activity_labels.txt Codes for the activities.
 
-Good luck!
+2. The Test and train data sets and code sets are merged.
+
+3. The features are added as column names and then the columns are filtered to provide only th emean and STD columns.
+
+4. The activities are decoded and added along with the subjects as columns to the table. 
+
+5. More appropriate labels are given to the variales in the column headers.
+
+6. The table is collaped to provide the average of each variable for each activity and each subject.
+
+7. The table is used to write the tidy data set as a txt file. 
