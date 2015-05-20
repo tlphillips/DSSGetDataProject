@@ -21,7 +21,7 @@ activity_labels.txt Codes for the activities.
 
 4. The activities are decoded and added along with the subjects as columns to the table. 
 
-5. More appropriate labels are given to the variales in the column headers.
+5. More appropriate labels are given to the feature variales in the column headers.
 
 6. The table is collaped to provide the average of each variable for each activity and each subject.
 
