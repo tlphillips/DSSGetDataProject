@@ -2,7 +2,7 @@
 
 This project contains the script which takes the test and train data sets and combines them into a tidy data set, which gives the Mean and Standard Deviation values recorded for the Human Activity Recognition Using Smartphones Dataset.
 
-1. he following data sets are loaded. 
+1. The following data sets are loaded. 
 
 x_test.txt - Test data observarions. 
 y_test.txt - Coded activities across observations.
